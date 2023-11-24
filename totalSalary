@@ -1,0 +1,9 @@
+/*
+문제
+지점별 총급여액이 얼마인지 조회하는 SQL문을 작성해주세요.
+*/
+
+SELECT branch_id, SUM(salary) AS total_salary
+FROM employees
+GROUP BY branch_id
+ORDER BY branch_id;
